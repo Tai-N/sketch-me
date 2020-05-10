@@ -1,0 +1,40 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+.grid-box {
+  height: 700px;
+  width: 700px;
+  margin: 2rem auto;
+  border: 0.5rem solid black;
+  border-radius: 1rem;
+  display: grid;
+  /* to use variable, use var */
+  grid-template-rows: repeat(var(--rows-entered), 1fr);
+  grid-template-columns: repeat(var(--cols-entered), 1fr);
+}
+
+.grid-cell {
+  border: 1px solid black;
+}
+
+.bg-color-change {
+  background-color: black;
+}
+
+.inputs {
+  margin-bottom: 2rem;
+}
+
+.btn {
+  height: 2rem;
+  width: 7rem;
+  display: block;
+  margin: 1rem auto;
+}
