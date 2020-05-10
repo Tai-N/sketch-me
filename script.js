@@ -23,7 +23,7 @@ const createGrid = (rows, cols) => {
     gridCell.classList.add("grid-cell");
     gridBox.appendChild(gridCell);
 
-    gridCell.addEventListener("mouseover", function () {
+    gridCell.addEventListener("mouseover", () => {
       gridCell.classList.add("bg-color-change");
     });
   }

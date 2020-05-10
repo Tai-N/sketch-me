@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+/* :root {
+  --rows-entered: ;
+  --cols-entered: ;
+} */
+
 body {
   text-align: center;
 }
@@ -15,7 +20,8 @@ body {
   border: 0.5rem solid black;
   border-radius: 1rem;
   display: grid;
-  /* to use variable, use var */
+  /* use var() to access css variable*/
+  /* variables are CSS custom properties, */
   grid-template-rows: repeat(var(--rows-entered), 1fr);
   grid-template-columns: repeat(var(--cols-entered), 1fr);
 }
